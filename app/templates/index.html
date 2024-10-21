@@ -7,34 +7,37 @@
     <meta charset="UTF-8">
     <title>{{titulo}}</title>
 
+        <nav>
+           <h1>PLANETA FAUNA</h1>
+      <figure class="figure1">
+          <img src="{{url_for('static',filename='imagens/planeta.png')}}" class="img1">
+      </figure>
+    <ul>
+      <li>
+          <div class="caixa1">
+        <a href="/faleconosco">FALE CONOSCO</a>
+          </div>
+      </li>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='imagens/infinitydata.png')}} "width=110 height=110"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="menu">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index">HOME</a>
+        <li>
+            <div class="caixa2">
+        <a href="/cadastro">REGISTRAR PET</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contato">CADASTRO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cadastro">CONTATO</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-  <h1> ASTRONOMICAL</h1>
+        <li>
+            <div class="caixa3">
+        <a href="/contato">LISTA COMPLETA</a>
+            </div>
+      </li>
+    </ul>
+        </nav>
 
-  <p class="justify-content-center">
-    Bem vindo ao Astronomical, um site onde você usuário, pode registrar e buscar todo e qualquer tipo de descobertas, relatos surreais e pesquisas relacionadas ao nosso espaço sideral.
-  </p>
+
+
+    <img src="{{url_for('static',filename='imagens/animal.png')}}" class="img2">
+
+
 
 
 </head>

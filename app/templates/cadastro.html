@@ -1,20 +1,27 @@
 {% extends 'base.html' %}
 {% block conteudo %}
+
+
+
+          <h1>PLANETA FAUNA</h1>
+      <figure class="figure1">
+          <img src="{{url_for('static',filename='imagens/planeta.png')}}">
+      </figure>
   <form action="/cadastrarUsuario" method="POST">
-    <label>CPF:</label>
-   <input type="text" name="cpf" id="cpf"/><br><br>
+    <label>NOME DO PET:</label>
+   <input type="text" name="pet" id="pet"/><br><br>
 
 
-    <label>Nome:</label>
-    <input type="text" name="nome" id="nome/"><br><br>
+    <label>IDADE:</label>
+    <input type="text" name="idade" id="idade/"><br><br>
 
-    <label>Endereço: </label>
-    <input type="text" name="endereco" id="endereco"/><br><br>
+    <label>ESPÉCIE: </label>
+    <input type="text" name="especie" id="especie"/><br><br>
 
-    <label>Telefone: </label>
-    <input type="text" name="telefone" id="telefone"/><br><br>
+    <label>DONO: </label>
+    <input type="text" name="dono" id="dono"/><br><br>
 
-    <button>Cadastrar</button>
+    <button>CADASTRAR</button>
     </form>
     <a href="/listar">Consultar Tudo</a><br><br>
     <a href="/listarIndividual">Consultar Individual</a><br><br>

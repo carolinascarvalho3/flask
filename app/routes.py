@@ -11,11 +11,11 @@ def index():
 
 @app.route('/contato')
 def contato():
-    return render_template('contato.html', titulo="Contatos")
+    return render_template('contato.html', titulo="LISTA COMPLETA")
 
 @app.route('/cadastro')
 def cadastro():
-    return render_template('cadastro.html', titulo="Cadastrar")
+    return render_template('cadastro.html', titulo="REGISTRAR PET")
 
 @app.route('/cadastrarUsuario', methods=['POST'])
 def cadastrarUsuario():
